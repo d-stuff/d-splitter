@@ -13,6 +13,7 @@ I really want to thank angular-sweetalert for this package-layout!
 
 (soon)
 ```powershell
+bower install d-splitter
 ```
 
 ## Import ##
