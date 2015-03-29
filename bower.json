@@ -1,6 +1,6 @@
 {
   "name": "d-splitter",
-  "version": "1.4.2",
+  "version": "0.1",
   "homepage": "https://github.com/d-stuff/d-splitter",
   "description": "angular splitter",
   "main": [
@@ -8,7 +8,7 @@
     "./dist/d-splitter.min.js",
     "./dist/d-splitter.min.js.map",
     "./dist/css/d-splitter.css",
-    "./dist/css/close-btn.png",
+    "./dist/css/close-btn.png"
   ],
   "keywords": [
     "angular",
