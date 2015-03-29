@@ -1,0 +1,157 @@
+@item-selected-bg: blue;
+@form-elements-disabled-bg: #ccc;
+@standard-text-color: black;
+@block-border: green;
+@item-hover-bg: red;
+@invalid-text-color: red;
+
+d-splitter {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+ 
+  >.screen {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    .unselectable;
+    z-index: 998;
+  }
+ 
+  .ui-state-default {
+    background-color: #aca
+  }
+  .ui-state-highlight {
+    background-color: @item-selected-bg
+  }
+ 
+  .splitter-pane {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+ 
+    >.collapse-button {
+      background: url("close-btn.png") no-repeat;
+      border: none;
+      outline: none;
+      display: none;
+      position: absolute;
+      top:0;
+      right:0;
+      width:20px;
+      height:20px;
+      z-index: 99;
+    }
+ 
+    &:hover {
+      >.collapse-button {
+        display: block;
+      }
+    }
+ 
+    &.collapsed {
+      overflow: hidden;
+ 
+      div {
+        >.collapse-button {
+          display: none;
+        }
+      }
+ 
+      &.vertical {
+        &:before {
+          padding: 50px 0;
+        }
+      }
+ 
+      &.horizontal {
+        &:before {
+          padding: 0 50px;
+          font-size: 18px;
+          line-height: 20px;
+        }
+      }
+ 
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: @form-elements-disabled-bg;
+        z-index: 100;
+        content: attr(title);
+        font-size: 32px;
+        text-align: center;
+        color: @standard-text-color;
+        word-break: break-all;
+      }
+      >.collapse-button {
+        display: block;
+        z-index: 101;
+        background: url("img/splitter-open.png") no-repeat;
+        background-size: 20px 20px;
+      }
+    }
+  }
+ 
+  .splitter-bar {
+    position: absolute;
+    background-color: @block-border;
+    z-index: 99;
+    &:hover {
+      background-color: @item-hover-bg;
+    }
+    &.vertical {
+      width: 4px;
+      height: 100%;
+      cursor: e-resize;
+    }
+    &.horizontal {
+      width: 100%;
+      height: 4px;
+      cursor: s-resize;
+    }
+    &.clone {
+      background-color: @item-selected-bg;
+      z-index: 999;
+      &.error {
+        background-color: @invalid-text-color;
+      }
+    }
+  }
+ 
+  .splitter-bar-vertical-docked {
+    width: 30px;
+  }
+  .splitter-bar.ui-state-highlight {
+    opacity: 0.7;
+  }
+  .splitter-bar-horizontal-docked {
+    height: 30px;
+  }
+  .splitter-iframe-hide {
+    visibility: hidden;
+  }
+}
+ 
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
