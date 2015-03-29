@@ -3,4 +3,5 @@ node_modules/
 
 #bower
 demo/bower
-/.c9
+.c9
+.c9/
