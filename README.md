@@ -47,12 +47,13 @@ var demo = angular.module('demo', ['dSplitter']);
 
 the directive can be used without any of the attributes:
 the defualts are:
-    type: "h" (for "horizontal") - can be also "v".
-    refer-el: 1 (as for the first element) - can be 1 or 2, to specify the elemnt you referred as the main-screen.
-    collapse-el: 2 (as for for the second element) - can be 1 or 2, to specify which one of the children-element will be collapsed by double-clicking the splitter-bar (default is the opposite to the referred-element)
-    size: 50% (give the referred-element 50% from the possible dimensions) - can be number (to define pixels) or with as presentage (like "40%") to define the starting-size of the referred-element.
-    min: null - can define a minimum size for the referred-element, so it can't be resized to be smaller (if so - will become collapsed)
-    max: null - can define a maximum size for the reffered-element, so it can't be resized to be bigger.
+- type: "h" (for "horizontal") - can be also "v".
+- refer-el: 1 (as for the first element) - can be 1 or 2, to specify the elemnt you referred as the main-screen.
+- collapse-el: 2 (as for for the second element) - can be 1 or 2, to specify which one of the children-element will be collapsed by double-clicking the splitter-bar (default is the opposite to the referred-element)
+- size: 50% (give the referred-element 50% from the possible dimensions) - can be number (to define pixels) or with as presentage (like "40%") to define the starting-size of the referred-element.
+- min: null - can define a minimum size for the referred-element, so it can't be resized to be smaller (if so - will become collapsed)
+- max: null - can define a maximum size for the reffered-element, so it can't be resized to be bigger.
+
 ```html
 <d-splitter>
     <ANY></ANY>
