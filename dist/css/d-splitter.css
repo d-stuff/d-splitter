@@ -1,0 +1,131 @@
+d-splitter {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+d-splitter * {
+  box-sizing: border-box;
+}
+d-splitter > .screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 998;
+}
+d-splitter .ui-state-default {
+  background-color: #aaccaa;
+}
+d-splitter .ui-state-highlight {
+  background-color: blue;
+}
+d-splitter .splitter-pane {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: absolute;
+}
+d-splitter .splitter-pane > .collapse-button {
+  background: url("close-btn.png") no-repeat;
+  border: none;
+  outline: none;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 99;
+}
+d-splitter .splitter-pane:hover > .collapse-button {
+  display: block;
+}
+d-splitter .splitter-pane.collapsed {
+  overflow: hidden;
+}
+d-splitter .splitter-pane.collapsed div > .collapse-button {
+  display: none;
+}
+d-splitter .splitter-pane.collapsed.vertical:before {
+  padding: 50px 0;
+}
+d-splitter .splitter-pane.collapsed.horizontal:before {
+  padding: 0 50px;
+  font-size: 18px;
+  line-height: 20px;
+}
+d-splitter .splitter-pane.collapsed:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cccccc;
+  z-index: 100;
+  content: attr(title);
+  font-size: 32px;
+  text-align: center;
+  color: black;
+  word-break: break-all;
+}
+d-splitter .splitter-pane.collapsed > .collapse-button {
+  display: block;
+  z-index: 101;
+  background: url("img/splitter-open.png") no-repeat;
+  background-size: 20px 20px;
+}
+d-splitter .splitter-bar {
+  position: absolute;
+  background-color: green;
+  z-index: 99;
+}
+d-splitter .splitter-bar:hover {
+  background-color: red;
+}
+d-splitter .splitter-bar.vertical {
+  width: 4px;
+  height: 100%;
+  cursor: e-resize;
+}
+d-splitter .splitter-bar.horizontal {
+  width: 100%;
+  height: 4px;
+  cursor: s-resize;
+}
+d-splitter .splitter-bar.clone {
+  background-color: blue;
+  z-index: 999;
+}
+d-splitter .splitter-bar.clone.error {
+  background-color: red;
+}
+d-splitter .splitter-bar-vertical-docked {
+  width: 30px;
+}
+d-splitter .splitter-bar.ui-state-highlight {
+  opacity: 0.7;
+}
+d-splitter .splitter-bar-horizontal-docked {
+  height: 30px;
+}
+d-splitter .splitter-iframe-hide {
+  visibility: hidden;
+}
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

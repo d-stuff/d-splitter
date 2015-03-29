@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+    <head>
+        <meta charset="UTF-8">
+        <title>DEMO</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="libs/amazeui.min.css">
+        <link rel="stylesheet" type="text/css" href="libs/css/d-splitter.css">
+        <link rel="stylesheet" type="text/css" href="demo.css">
+    </head>
+    <body ng-controller="demoController">
+        <div class="get">
+            <div class="am-g">
+                <div class="col-lg-12">
+                    <h1 class="get-title">d-splitter</h1>
+                    <p>
+                    usage
+                    </p>
+                    <p>
+                    <a href="https://github.com/d-stuff/d-splitter" class="am-btn am-btn-sm get-btn">Check Github</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="example" style="width: 100%; height: 800px;border: 3px solid;">
+            <d-splitter>
+                <div style="width: 50%" title="vertical text">
+                    one side
+                </div>
+                <div title="second side">
+                    <d-splitter type="h" size="60%">
+                        <div title="what ever you want">
+                            <d-splitter type="v" size="30%">
+                                <div title="what ever you want">
+                                    recursive
+                                </div>
+                                <div title="what ever you like">third</div>
+                            </d-splitter>
+                        </div>
+                        <div title="what ever you like">second</div>
+                    </d-splitter>
+                </div>
+            </d-splitter>
+
+        </div>
+        <footer class="footer">
+            <p>&copy; 2014 Licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.</p>
+        </footer>
+    <script type="text/javascript" src="libs/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="libs/d-splitter.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+    </body>
+</html>
