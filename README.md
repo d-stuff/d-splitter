@@ -73,6 +73,13 @@ and it's also work fine with resize, and recursively.
 
 it took me two days to make it, so if you want to help making it more clear, and rewrite this doc, it's great!
 
+## Demo ##
+clone the repository, and run:
+```powershell
+gulp dist
+gulp demo
+```
+
 ## LICENSE ##
 
 [MIT License](https://raw.githubusercontent.com/leftstick/angular-sweetalert/master/LICENSE)
