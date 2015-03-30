@@ -1,7 +1,8 @@
 # d-splitter #
 ==================
 
-an angular directive to split the screen.
+splitter directive for angular, that actually work.
+
 I really want to thank angular-sweetalert for this package-layout!
 
 ## Requirements ##
