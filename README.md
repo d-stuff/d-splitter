@@ -6,12 +6,11 @@ I really want to thank angular-sweetalert for this package-layout!
 
 ## Requirements ##
 
-- [jquery]
+- [jquery][jquery-url]
 - [angular][angular-url]
 
 ## Install ##
 
-(soon)
 ```powershell
 bower install d-splitter
 ```
@@ -78,3 +77,4 @@ it took me two days to make it, so if you want to help making it more clear, and
 [MIT License](https://raw.githubusercontent.com/leftstick/angular-sweetalert/master/LICENSE)
 
 [angular-url]: https://angularjs.org/
+[jquery-url]: https://jquery.com/
