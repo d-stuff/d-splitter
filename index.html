@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>D-splitter by d-stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">D-splitter</h1>
+      <h2 class="project-tagline">splitter directive for angular</h2>
+      <a href="https://github.com/d-stuff/d-splitter" class="btn">View on GitHub</a>
+      <a href="https://github.com/d-stuff/d-splitter/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/d-stuff/d-splitter/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="d-splitter" class="anchor" href="#d-splitter" aria-hidden="true"><span class="octicon octicon-link"></span></a>d-splitter</h1>
+
+<h1></h1>
+
+<p>splitter directive for angular, that actually work.</p>
+
+<p>I really want to thank angular-sweetalert for this package-layout!</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li><a href="https://jquery.com/">jquery</a></li>
+<li><a href="https://angularjs.org/">angular</a></li>
+</ul>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<div class="highlight highlight-powershell"><pre>bower install d<span class="pl-k">-</span>splitter</pre></div>
+
+<h2>
+<a id="import" class="anchor" href="#import" aria-hidden="true"><span class="octicon octicon-link"></span></a>Import</h2>
+
+<div class="highlight highlight-html"><pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+    &lt;<span class="pl-ent">meta</span> <span class="pl-e">charset</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">title</span>&gt;DEMO&lt;/<span class="pl-ent">title</span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>libs/d-splitter.css<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>libs/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>libs/angular.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    &lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>libs/d-splitter.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span>
+    &lt;<span class="pl-ent">d</span><span class="pl-e">-splitter</span> [<span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>v<span class="pl-pds">"</span></span>/<span class="pl-s"><span class="pl-pds">"</span>h<span class="pl-pds">"</span></span>] [<span class="pl-e">refer-el</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>/<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span>] [<span class="pl-e">collapse-el</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span>/<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span>] [<span class="pl-e">size</span>=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span>/<span class="pl-s"><span class="pl-pds">"</span>30%<span class="pl-pds">"</span></span>]&gt;
+        &lt;<span class="pl-ent">ANY</span>&gt;&lt;/<span class="pl-ent">ANY</span>&gt;
+        &lt;<span class="pl-ent">ANY</span>&gt;&lt;/<span class="pl-ent">ANY</span>&gt;
+    &lt;/<span class="pl-ent">d</span><span class="pl-e">-splitter</span>&gt;
+&lt;/<span class="pl-ent">body</span>&gt;
+&lt;/<span class="pl-ent">html</span>&gt;</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-javascript"><pre>
+<span class="pl-k">var</span> demo <span class="pl-k">=</span> angular.module(<span class="pl-s"><span class="pl-pds">'</span>demo<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>dSplitter<span class="pl-pds">'</span></span>]);
+</pre></div>
+
+<p>the directive can be used without any of the attributes:
+the defualts are:</p>
+
+<ul>
+<li>type: "h" (for "horizontal") - can be also "v".</li>
+<li>refer-el: 1 (as for the first element) - can be 1 or 2, to specify the elemnt you referred as the main-screen.</li>
+<li>collapse-el: 2 (as for for the second element) - can be 1 or 2, to specify which one of the children-element will be collapsed by double-clicking the splitter-bar (default is the opposite to the referred-element)</li>
+<li>size: 50% (give the referred-element 50% from the possible dimensions) - can be number (to define pixels) or with as presentage (like "40%") to define the starting-size of the referred-element.</li>
+<li>min: null - can define a minimum size for the referred-element, so it can't be resized to be smaller (if so - will become collapsed)</li>
+<li>max: null - can define a maximum size for the reffered-element, so it can't be resized to be bigger.</li>
+</ul>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">d</span><span class="pl-e">-splitter</span>&gt;
+    &lt;<span class="pl-ent">ANY</span>&gt;&lt;/<span class="pl-ent">ANY</span>&gt;
+    &lt;<span class="pl-ent">ANY</span>&gt;&lt;/<span class="pl-ent">ANY</span>&gt;
+&lt;/<span class="pl-ent">d</span><span class="pl-e">-splitter</span>&gt;</pre></div>
+
+<p>it's important for you to know, the attributes: 'size', 'min' and 'max' can be also be taken form CSS declarations, which means:
+if you have "width: 100px" or "height: 100%" on the referred-element itself, or on a css file, the directive will consider it as it's starting-size.
+the same goes for: min-height, min-width, max-height, max-width.
+notice: declaring "50%" size as a starting-size for the first element, takes in considations the size of the splitter-bar, the splitter-borders etc, so it will be the same size as the second element.Import</p>
+
+<p>also, if you try to define your own style to the splitter (borders, splitter-bar etc.), the splitter should work fine and consider your CSS declarations while calculating dimensions.
+and it's also work fine with resize, and recursively.</p>
+
+<p>it took me two days to make it, so if you want to help making it more clear, and rewrite this doc, it's great!</p>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>clone the repository, and run:</p>
+
+<div class="highlight highlight-powershell"><pre>gulp dist
+gulp demo</pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p><a href="https://raw.githubusercontent.com/leftstick/angular-sweetalert/master/LICENSE">MIT License</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/d-stuff/d-splitter">D-splitter</a> is maintained by <a href="https://github.com/d-stuff">d-stuff</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
